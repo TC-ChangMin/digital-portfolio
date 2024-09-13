@@ -1,0 +1,10 @@
+.glow-text {
+    font-size: 2em; /* Adjust size as needed */
+    color: white; /* Base text color */
+    text-shadow: 
+      0 0 5px #ff0000, /* Red glow */
+      0 0 10px #ff0000,
+      0 0 15px #ff0000,
+      0 0 20px #ff0000; /* Stronger glow effect */
+  }
+  
