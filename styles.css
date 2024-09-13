@@ -131,7 +131,33 @@ img {
 }
 
 /* Home */
+.home-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  max-width: 1000px;
+}
+.name-heading{
+  display: flex;
+  justify-content: center;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: var(--text-color);
+  font-size: calc(var(--font-size-large) + 2.5rem);
+  margin-bottom: -0.5rem;
+}
+
+.name-subheading{
+  display: flex;
+  justify-content: center;
+  word-spacing: 10px;
+  letter-spacing: 10px;
+  font-size: var(--font-size-medium);
+  margin-bottom: 1.2rem;
+}
 .intro{
+  margin-top: 60px;
   color: var(--text-color-offset);
 }
 /* About Me */
