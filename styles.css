@@ -1,4 +1,4 @@
-/* Global scoping start*/
+/* Global start*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,8 +7,9 @@
 }
 :root{
   /* Colors */
-  --background-color: rgb(14, 22, 35);
-  --text-color: rgb(60, 75, 95);
+  --background-color: rgb(5, 16, 33);
+  --text-color: rgba(230, 223, 223, 0.681);
+  --text-color-offset: rgba(230, 223, 223, 0.499);
   --glow: rgb(98, 212, 246);
   --glow2: rgb(62, 139, 244);
   --glow3: rgb(33, 77, 131);
@@ -47,9 +48,51 @@ section{
 img {
   width: 100%;
 }
-/* Global scoping end*/
+.socials {
+  display: flex;
+  align-self:flex-end ;
+  flex-direction: column;
+  position: fixed;
+  bottom: -100px;
+  right: 70px;
+  z-index: 100;
+  background: none;
+}
+/* Socials */
+.socials > a {
+  text-decoration: none;
+  border-bottom: 0.1px solid transparent;
+  transition: border-bottom-color 0.3s ease, color 0.3s ease;
+}
 
-/* header */
+.icon {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin: 5px;
+  transition: color 0.3s ease;
+}
+
+.socials > a:hover,
+.socials > a:focus {
+  border-bottom-color: var();
+}
+
+.icon:hover {
+  color: var(--glow);
+}
+
+.socials::after {
+  content: "";
+  display: block;
+  height: 150px;
+  width: 0.1px;
+  background-color: var(--background-color);
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
 .website-header{
   font-family: sans-serif;
   width: 100%;
@@ -68,8 +111,30 @@ img {
 .nav-item{
   margin-left: 1rem;
 }
+.nav-item-link{
+  color: var(--text-color);
+}
 
 .nav-item-link:hover,
 .nav-item-link:focus{
   color: var(--glow);
+}
+/* Global end*/
+
+/* Main */
+#main-content {
+  padding-top: 5rem;
+  position: relative;
+  padding: 0 150px;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+/* Home */
+.intro{
+  color: var(--text-color-offset);
+}
+/* About Me */
+.about-skills-grid ul li{
+  list-style-type: none;
 }
