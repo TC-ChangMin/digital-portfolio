@@ -159,6 +159,7 @@ img {
 .intro{
   margin-top: 60px;
   color: var(--text-color-offset);
+  font-size: calc(var(--font-size-normal) + 1px);
 }
 /* About Me */
 .about-skills-grid ul li{
