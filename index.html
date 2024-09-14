@@ -10,14 +10,14 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css"
     rel="stylesheet"/>
     <!--========== Scripts ==========-->
-    <script defer src="./js/main.js"></script>
+    <script defer src="js/script.js"></script>
 
 
     <title>Nick's Portfolio</title>
 </head>
 <body>
     <!--========== Header ==========-->
-    <header class="website-header">
+    <header id="header" class="website-header">
         <nav class="website-nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#home" class="nav-item-link">home</a></li>
@@ -75,7 +75,7 @@
         <!--========== About Me ==========-->
         <section id="about" class="about-section">
             <h2 class="headings">About Me</h2>
-            <div class="about-container-grid">
+            <div class="about-container grid">
                 <div class="about-info">
                     <div class="about-description">
                         <p>
@@ -83,17 +83,17 @@
                             I disliked how video game bot scripts looked, and so for
                             a period of time I built them myself to compensate. Using
                             my developed skills in the front end I am able to create
-                            an enjoyable user experience for the user.
+                            an enjoyable experience for the user.
                             <br>
                             <br>
                             Much has been said about creating a desireable user
                             experience, but what makes me so confident I am able to 
                             create one? Well, for starters, I have many years working
                             in customer service. Starting at 15 I had run an online
-                            market, getting user data and readjusting based on customer
+                            market, getting user data and adjusting based on customer
                             demands. I've worked in person with people of varying
-                            disabilities. I know what people want and my communication
-                            with them is accomodating and effective. 
+                            disabilities as well, which has developed my listening skills,
+                            allowing me to take feedback and adapt accordingly.  
                             <br>
                             <br>
                             I might not be technically inclined as other people, but I
@@ -117,7 +117,7 @@
                 </div>
                 <div class="about-image-container">
                     <img 
-                    src="./images/me-removebg-preview.png" 
+                    src="./images/me.png" 
                     alt="me"
                     class="about-image-overlay"
                     />
@@ -127,6 +127,12 @@
         <!--========== Projects ==========-->
         <section id="projects" class="projects-section">
             <h2 class="headings projects-heading">My Projects</h2>
+            <div class="projects-tabs">
+              <div class="projects-icon">
+                <i class="ri-image-fill" aria-label="GitHub Icon"></i>
+              </div>
+              <div class="projects-description"> Work in Progress</div>
+            </div>
         </section>
         <!--========== Contact ==========-->
         <section id="contact" class="contact-section">

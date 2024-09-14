@@ -7,7 +7,8 @@
 }
 :root{
   /* Colors */
-  --background-color: rgb(5, 16, 33);
+  --background-color: rgb(8, 23, 45);
+  --nav-border-color: rgb(5, 16, 60);
   --text-color: rgba(230, 223, 223, 0.681);
   --text-color-offset: rgba(230, 223, 223, 0.499);
   --glow: rgb(98, 212, 246);
@@ -101,7 +102,10 @@ img {
   padding: 0 5rem;
   top: 0;
   right: 0;
-  transition: 0.8s;
+  transition: top 0.3s;
+  background-color: var(--background-color);
+  border: 1px solid;
+  border-color: var(--nav-border-color);
 }
 .nav-list{
   display: flex;
@@ -162,6 +166,21 @@ img {
   font-size: calc(var(--font-size-normal) + 1px);
 }
 /* About Me */
+.about-section .headings{
+  position: relative;
+  right: 15%;
+}
+.about-section .about-container{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding-top: rem;
+  gap: 2rem;
+}
+.about-image-overlay{
+  border: 1px solid;
+  color: var(--glow2);
+  border-radius: 10%;
+}
 .about-skills-grid ul li{
   list-style-type: none;
 }
