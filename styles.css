@@ -8,6 +8,7 @@
 :root{
   /* Colors */
   --background-color: rgb(8, 23, 45);
+  --btn-color: rgb(16, 37, 69);
   --nav-border-color: rgb(5, 16, 60);
   --text-color: rgba(230, 223, 223, 0.681);
   --text-color-offset: rgba(230, 223, 223, 0.499);
@@ -16,8 +17,8 @@
   --glow3: rgb(33, 77, 131);
   
   /* Fonts and Font Sizes */
-  --heading-font: "Ariel Black";
-  --main-font: sans-serif;
+  --heading-font: "Fredoka One";
+  --main-font: "Fredoka One";
   --font-size-large: 5rem;
   --font-size-medium: 2rem;
   --font-size-normal: 1rem;
@@ -176,11 +177,94 @@ img {
   padding-top: rem;
   gap: 2rem;
 }
+.about-image-container p{
+  display: flex;
+  justify-content: center;
+  font-size: 6px;
+}
 .about-image-overlay{
   border: 1px solid;
   color: var(--glow2);
   border-radius: 10%;
 }
-.about-skills-grid ul li{
+.about-skills-grid{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.about-skills-grid ul{
   list-style-type: none;
+}
+.skills-col1{
+
+}
+.skills-col2{
+  margin-right: 35%;
+}
+/* Projects Section */
+.projects-section{
+  display: flex;
+  flex-direction: column;
+}
+.projects-tab{
+  display: flex;
+  justify-content: center;
+}
+.project-images-container {
+  width: 100%;
+  height: 400px; /* Set a fixed height for the container */
+  display: flex; /* Enable flexbox layout */
+  justify-content: center;
+  overflow: hidden; /* Hide any overflow to maintain the layout */
+  position: relative;
+}
+.project-images-container img {
+  width: auto;
+  height: 100%;
+  position: absolute; /* Position images absolutely within the container */
+  transition: opacity 1s ease, transform 2s ease; /* Smooth transition */
+  opacity: 0; /* Start with images hidden */
+}
+.project-images-container img.active {
+  opacity: 1; /* Show the active image */
+}
+.projects-nav{
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-size-large); /* placeholder for now */
+}
+.ri-arrow-left-s-line:hover {
+  color: var(--glow); /* Color on hover for left arrow */
+  transform: scale(1.5);
+}
+.ri-arrow-right-s-line:hover {
+  color: var(--glow); /* Color on hover for left arrow */
+  transform: scale(1.5);
+}
+.projects-description{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+/* Contact */
+.contact-description{
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
+}
+.contact-button-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20%;
+}
+.contact-button{
+  background-color: var(--btn-color);
+  color: var(--glow);
+  padding: 5px 20px;
+  border-radius: 8px;
+}
+.contact-button:hover{
+  background-color: var(--glow);
+  color: var(--btn-color);
 }

@@ -14,3 +14,21 @@ window.addEventListener("scroll", () => {
 
   lastScrollY = window.scrollY;
 });
+
+
+// JavaScript to handle image scrolling
+let currentIndex = 0;
+const images = document.querySelectorAll('.project-images-container img');
+const descriptionElement = document.querySelector('.projects-description');
+
+function changeImage(direction) {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+    images[currentIndex].classList.add('active');
+    
+    // Update the description
+    descriptionElement.textContent = images[currentIndex].getAttribute('data-description');
+}
+
+// Initialize with the first image and description
+changeImage(0);
