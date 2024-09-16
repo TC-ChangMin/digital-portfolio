@@ -232,6 +232,7 @@ img {
   display: flex;
   justify-content: center;
   font-size: var(--font-size-large); /* placeholder for now */
+  margin-bottom: 4rem;
 }
 .ri-arrow-left-s-line:hover {
   color: var(--glow); /* Color on hover for left arrow */
@@ -244,10 +245,14 @@ img {
 .projects-description{
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* Contact */
+.contact-section{
+  margin: 5rem 0;
+}
 .contact-description{
   display: flex;
   justify-content: center;
