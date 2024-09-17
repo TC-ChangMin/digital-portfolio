@@ -19,6 +19,7 @@
   /* Fonts and Font Sizes */
   --heading-font: "Fredoka One";
   --main-font: "Fredoka One";
+  --body-font: "Helvetica";
   --font-size-large: 5rem;
   --font-size-medium: 2rem;
   --font-size-normal: 1rem;
@@ -28,10 +29,13 @@ html {
   scroll-behavior: smooth;
 }
 body{
-  font-family: var(--main-font);
+  font-family: var(--body-font);
   line-height: 1.5;
   background-color: var(--background-color);
   color: var(--text-color);
+}
+h1, h2, h3{
+  font-family: var(--main-font);
 }
 section{
   margin: 0 auto;
@@ -203,6 +207,7 @@ img {
 }
 /* Projects Section */
 .projects-section{
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
 }
@@ -252,6 +257,7 @@ img {
 /* Contact */
 .contact-section{
   margin: 5rem 0;
+  margin-left: 7%;
 }
 .contact-description{
   display: flex;
